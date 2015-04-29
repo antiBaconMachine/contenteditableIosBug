@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            .foo {
+                border: 2px solid pink;
+                width: 100%;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Test page: contenteditable</h1>
+        <div contenteditable="true" class="foo"></div>
+        <a href="#">link</a>
+        <button>button</button>
+
+        <p>
+            This is a test page demonstrating a bug in contenteditable divs and autocorrect in ios webviews which results in duplicate words. To see it in action:
+        </p>
+        <ol>
+            <li>Type a word in the div with an abvious typo so that autocorrect makes a suggestion</li>
+            <li>Tab either the link or button</li>
+            <li>Autocorrect will insert two copies of the corrected word</li>
+        </ol>
+    </body>
+</html>
